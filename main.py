@@ -10,7 +10,7 @@ from google import genai
 
 recognizer=sr.Recognizer()
 engine=pyttsx3.init()
-newsapi = "6bb38066a5214e25a5684691a0b2790b"
+newsapi = "your_api_key"
 
 def speak(text):
     engine=pyttsx3.init(driverName='sapi5')
@@ -19,7 +19,7 @@ def speak(text):
     
 def ask_genai(command):
     
-    client = genai.Client(api_key="AIzaSyCYVZWxSFZx1MZPG6d20EXSQWaSAHFfD90")
+    client = genai.Client(api_key="your api key")
                 
 
 
@@ -103,4 +103,5 @@ if __name__ == "__main__":
                     
         
         except Exception as e:
+
             print("error; {0}".format(e))
